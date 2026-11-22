@@ -1,7 +1,7 @@
 package com.iknow.android;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,15 +15,15 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 
-import iknow.android.utils.DateUtil;
-import iknow.android.utils.DeviceUtil;
-import iknow.android.utils.callback.SingleCallback;
+import com.iknow.android.utils.VideoUtils.DateUtil;
+import com.iknow.android.utils.VideoUtils.DeviceUtil;
+import com.iknow.android.utils.VideoUtils.SingleCallback;
 
 
 /**
- * Author：J.Chou
- * Date：  2016.08.01 3:45 PM
- * Email： who_know_me@163.com
+ * Author锛欽.Chou
+ * Date锛? 2016.08.01 3:45 PM
+ * Email锛?who_know_me@163.com
  * Describe:
  */
 public class VideoGridViewAdapter extends RecyclerView.Adapter<VideoGridViewAdapter.VideoViewHolder> {
@@ -128,3 +128,4 @@ public class VideoGridViewAdapter extends RecyclerView.Adapter<VideoGridViewAdap
         selectIconList.clear();
     }
 }
+

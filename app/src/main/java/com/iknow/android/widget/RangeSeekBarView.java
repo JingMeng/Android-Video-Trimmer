@@ -15,9 +15,9 @@ import com.iknow.android.interfaces.RangeSeekBarListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import iknow.android.utils.DateUtil;
-import iknow.android.utils.DeviceUtil;
-import iknow.android.utils.UnitConverter;
+import com.iknow.android.utils.VideoUtils.DateUtil;
+import com.iknow.android.utils.VideoUtils.DeviceUtil;
+import com.iknow.android.utils.VideoUtils.UnitConverter;
 
 
 public class RangeSeekBarView extends View {

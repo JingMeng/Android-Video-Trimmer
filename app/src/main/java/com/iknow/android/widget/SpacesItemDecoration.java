@@ -1,13 +1,13 @@
 package com.iknow.android.widget;
 
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 /**
  * Author: Jason.Chou
  * Email: who_know_me@163.com
- * Created: 2016年05月04日 11:27 AM
+ * Created: 2016骞?5鏈?4鏃?11:27 AM
  * Description:
  */
 public class SpacesItemDecoration extends RecyclerView.ItemDecoration{
@@ -32,3 +32,4 @@ public class SpacesItemDecoration extends RecyclerView.ItemDecoration{
     outRect.right = halfSpace;
   }
 }
+

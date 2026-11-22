@@ -1,9 +1,9 @@
 package com.iknow.android;
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import android.view.View;
 import com.iknow.android.databinding.VideoSelectLayoutBinding;
 import com.iknow.android.models.VideoInfo;
@@ -12,12 +12,12 @@ import com.iknow.android.widget.SpacesItemDecoration;
 
 import java.util.ArrayList;
 
-import iknow.android.utils.callback.SingleCallback;
+import com.iknow.android.utils.VideoUtils.SingleCallback;
 
 /**
- * Author：J.Chou
- * Date：  2016.08.01 2:23 PM
- * Email： who_know_me@163.com
+ * Author锛欽.Chou
+ * Date锛? 2016.08.01 2:23 PM
+ * Email锛?who_know_me@163.com
  * Describe:
  */
 public class VideoSelectActivity extends AppCompatActivity implements View.OnClickListener {
@@ -73,3 +73,4 @@ public class VideoSelectActivity extends AppCompatActivity implements View.OnCli
         }
     }
 }
+

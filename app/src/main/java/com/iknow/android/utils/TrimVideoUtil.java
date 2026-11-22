@@ -13,10 +13,10 @@ import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunningException;
 import com.iknow.android.interfaces.TrimVideoListener;
 import com.iknow.android.models.VideoInfo;
-import iknow.android.utils.DeviceUtil;
-import iknow.android.utils.UnitConverter;
-import iknow.android.utils.callback.SingleCallback;
-import iknow.android.utils.thread.BackgroundExecutor;
+import com.iknow.android.utils.VideoUtils.DeviceUtil;
+import com.iknow.android.utils.VideoUtils.UnitConverter;
+import com.iknow.android.utils.VideoUtils.SingleCallback;
+import com.iknow.android.utils.VideoUtils.BackgroundExecutor;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -91,6 +91,7 @@ public class TrimVideoUtil {
 
                        //每次截取到3帧之后上报
                        for (long i = 0; i < numThumbs; ++i) {
+                           if (Thread.currentThread().isInterrupted()) break;
                            Bitmap bitmap = mediaMetadataRetriever.getFrameAtTime(i * interval, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
                            try {
                                bitmap = Bitmap.createScaledBitmap(bitmap, thumb_Width, thumb_Height, false);

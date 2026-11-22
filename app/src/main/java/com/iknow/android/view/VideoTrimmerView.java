@@ -33,11 +33,11 @@ import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-import iknow.android.utils.DeviceUtil;
-import iknow.android.utils.UnitConverter;
-import iknow.android.utils.callback.SingleCallback;
-import iknow.android.utils.thread.BackgroundExecutor;
-import iknow.android.utils.thread.UiThreadExecutor;
+import com.iknow.android.utils.VideoUtils.DeviceUtil;
+import com.iknow.android.utils.VideoUtils.UnitConverter;
+import com.iknow.android.utils.VideoUtils.SingleCallback;
+import com.iknow.android.utils.VideoUtils.BackgroundExecutor;
+import com.iknow.android.utils.VideoUtils.UiThreadExecutor;
 
 public class VideoTrimmerView extends FrameLayout {
 

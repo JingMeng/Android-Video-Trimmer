@@ -12,7 +12,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
-import iknow.android.utils.BaseUtils;
+import com.iknow.android.utils.VideoUtils.BaseUtils;
 
 /**
  * Author：J.Chou

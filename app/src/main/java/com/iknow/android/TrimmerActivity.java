@@ -2,11 +2,11 @@ package com.iknow.android;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import com.iknow.android.databinding.ActivityTrimmerBinding;
 import com.iknow.android.interfaces.CompressVideoListener;
@@ -105,3 +105,4 @@ public class TrimmerActivity extends AppCompatActivity implements TrimVideoListe
         return mProgressDialog;
     }
 }
+
